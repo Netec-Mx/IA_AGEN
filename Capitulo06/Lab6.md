@@ -12,7 +12,7 @@
 
 ## Descripción General
 
-En este laboratorio extenderás el agente construido en los Labs 3 y 4 con un módulo de memoria bicapa: una capa de **corto plazo** basada en Redis (contexto de sesión activa con TTL configurable) y una capa de **largo plazo** basada en SQLite (hechos persistentes indexados por usuario). Implementarás un mecanismo de resumen automático con GPT-4o-mini para comprimir conversaciones largas, configurarás políticas de retención declarativas en YAML, y aplicarás detección y anonimización de PII con Presidio antes de persistir cualquier dato. Al finalizar, probarás la transferencia de contexto entre dos instancias del agente simulando el cierre y reapertura de sesión.
+En este laboratorio extenderás el agente construido en los Labs 3 y 4 con un módulo de memoria bicapa: una capa de **corto plazo** basada en Redis (contexto de sesión activa con TTL configurable) y una capa de **largo plazo** basada en SQLite (hechos persistentes indexados por usuario). Implementarás un mecanismo de resumen automático con gpt-5-mini para comprimir conversaciones largas, configurarás políticas de retención declarativas en YAML, y aplicarás detección y anonimización de PII con Presidio antes de persistir cualquier dato. Al finalizar, probarás la transferencia de contexto entre dos instancias del agente simulando el cierre y reapertura de sesión.
 
 > ⚠️ **Aviso de privacidad:** Este lab trabaja con detección de PII. **Nunca uses datos reales de personas.** Todos los datos de prueba deben ser sintéticos.
 
@@ -23,7 +23,7 @@ En este laboratorio extenderás el agente construido en los Labs 3 y 4 con un m�
 Al completar este laboratorio, serás capaz de:
 
 - [ ] Implementar memoria a corto plazo con Redis y TTL configurable, y memoria a largo plazo con SQLite indexada por usuario.
-- [ ] Configurar resumen automático de conversaciones largas usando GPT-4o-mini para comprimir el contexto sin perder información crítica.
+- [ ] Configurar resumen automático de conversaciones largas usando gpt-5-mini para comprimir el contexto sin perder información crítica.
 - [ ] Diseñar políticas de retención declarativas en YAML que especifiquen qué datos guardar, por cuánto tiempo y bajo qué condiciones eliminarlos.
 - [ ] Aplicar detección y anonimización de PII con Presidio antes de persistir datos en cualquier capa de memoria.
 - [ ] Verificar la transferencia de contexto entre sesiones simulando el ciclo cierre/reapertura de un agente.
@@ -43,12 +43,12 @@ Al completar este laboratorio, serás capaz de:
 
 ### Requisitos de hardware
 
-| Componente | Mínimo | Recomendado |
-|---|---|---|
-| CPU | 4 núcleos | 8 núcleos |
-| RAM | 16 GB | 32 GB |
-| Disco libre | 3 GB | 5 GB |
-| Red | 10 Mbps | 25 Mbps |
+| Recurso | Mínimo requerido |
+|---|---|
+| CPU | 4 núcleos |
+| RAM | 8 GB |
+| Disco | 128 GB SSD |
+| Red | Mínimo 10 Mbps |
 
 ### Software y versiones
 
@@ -59,7 +59,7 @@ Al completar este laboratorio, serás capaz de:
 | SQLite3 | 3.45.x (built-in) | Memoria de largo plazo |
 | LangGraph | 0.2.x | Agente con memoria integrada |
 | LangChain | 0.3.x | Abstracciones de cadena/memoria |
-| OpenAI SDK | 1.40.x | Resumen con GPT-4o-mini |
+| OpenAI SDK | 1.40.x | Resumen con gpt-5-mini |
 | Presidio Analyzer | 2.2.x | Detección de PII |
 | Presidio Anonymizer | 2.2.x | Anonimización de PII |
 | spaCy | 3.x | Modelo NLP para Presidio |
@@ -1976,7 +1976,7 @@ En este laboratorio implementaste un módulo de memoria bicapa completo para un 
 |---|---|---|
 | **Memoria corto plazo** | Redis 7.2 | Contexto de sesión activa con TTL de 30 min |
 | **Memoria largo plazo** | SQLite3 | Hechos persistentes indexados por usuario |
-| **Resumen automático** | GPT-4o-mini | Compresión de historial al superar umbral |
+| **Resumen automático** | gpt-5-mini | Compresión de historial al superar umbral |
 | **Políticas de retención** | YAML | TTL diferenciado por tipo de hecho (7/30/90 días) |
 | **Protección de PII** | Presidio + spaCy | Anonimización antes de cualquier persistencia |
 | **Auditoría** | SQLite (tabla) | Registro de detecciones PII sin valor real |

@@ -52,11 +52,12 @@ Al completar este laboratorio serás capaz de:
 
 ### Hardware Recomendado
 
-| Componente | Mínimo |
+| Recurso | Mínimo requerido |
 |---|---|
-| CPU | 4 núcleos (Intel i5 8va gen / AMD Ryzen 5) |
-| RAM | 8 GB (lab conceptual; sin modelos locales) |
-| Almacenamiento | 2 GB libres para entorno virtual y notebooks |
+| CPU | 4 núcleos |
+| RAM | 8 GB |
+| Disco | 128 GB SSD |
+| Red | Mínimo 10 Mbps |
 
 ### Software Requerido
 

@@ -40,12 +40,12 @@ Al finalizar este laboratorio serás capaz de:
 
 ### Requisitos de hardware
 
-| Componente | Mínimo | Recomendado |
-|---|---|---|
-| CPU | 4 núcleos | 8 núcleos |
-| RAM | 16 GB | 32 GB |
-| Almacenamiento libre | 2 GB | 5 GB |
-| Red | 10 Mbps | 25 Mbps |
+| Recurso | Mínimo requerido |
+|---|---|
+| CPU | 4 núcleos |
+| RAM | 8 GB |
+| Disco | 128 GB SSD |
+| Red | Mínimo 10 Mbps |
 
 ### Dependencias de software
 
@@ -250,7 +250,7 @@ class MetricasAgente(BaseModel):
     estado: EstadoTarea = EstadoTarea.PENDIENTE
     errores: list[str] = Field(default_factory=list)
 
-    # Precios GPT-4o-mini (USD por 1K tokens)
+    # Precios gpt-5-mini (USD por 1K tokens)
     PRECIO_INPUT_POR_1K: float = 0.000150
     PRECIO_OUTPUT_POR_1K: float = 0.000600
 
@@ -339,7 +339,7 @@ class MonitorMetricas:
     Basado en el marco de 5 dimensiones de la Lección 7.1.
     """
 
-    # Precios GPT-4o-mini (USD por 1K tokens) - Lección 7.1
+    # Precios gpt-5-mini (USD por 1K tokens) - Lección 7.1
     PRECIO_INPUT_POR_1K = 0.000150
     PRECIO_OUTPUT_POR_1K = 0.000600
 

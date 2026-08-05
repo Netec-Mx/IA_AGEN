@@ -39,12 +39,12 @@ En este laboratorio tomarás el agente LangGraph construido en el Lab 3 y le añ
 
 ### Hardware mínimo
 
-| Componente   | Mínimo recomendado                        |
-|--------------|-------------------------------------------|
-| CPU          | 4 núcleos (Intel i5 8ª gen / Ryzen 5)    |
-| RAM          | 16 GB                                     |
-| Almacenamiento | 500 MB libres para este lab             |
-| Red          | 10 Mbps (acceso a OpenAI API)             |
+| Recurso | Mínimo requerido |
+|---|---|
+| CPU | 4 núcleos |
+| RAM | 8 GB |
+| Disco | 128 GB SSD |
+| Red | Mínimo 10 Mbps |
 
 ### Software requerido
 

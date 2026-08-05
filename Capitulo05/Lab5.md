@@ -40,12 +40,12 @@ En este lab construirás un **servidor MCP completo** usando FastAPI que expone 
 
 ### Hardware mínimo recomendado
 
-| Recurso     | Mínimo            | Recomendado       |
-|-------------|-------------------|-------------------|
-| CPU         | 4 núcleos         | 8 núcleos         |
-| RAM         | 16 GB             | 32 GB             |
-| Disco libre | 20 GB SSD         | 20 GB SSD         |
-| Red         | 10 Mbps           | 25 Mbps           |
+| Recurso | Mínimo requerido |
+|---|---|
+| CPU | 4 núcleos |
+| RAM | 8 GB |
+| Disco | 128 GB SSD |
+| Red | Mínimo 10 Mbps |
 
 ### Software requerido
 

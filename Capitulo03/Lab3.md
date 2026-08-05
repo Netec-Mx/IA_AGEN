@@ -38,12 +38,12 @@ En este laboratorio construirás un **agente de investigación y síntesis** fun
 
 ### Hardware mínimo requerido
 
-| Componente | Mínimo | Recomendado |
-|---|---|---|
-| CPU | 4 núcleos (i5 8va gen / Ryzen 5) | 8 núcleos |
-| RAM | 16 GB | 32 GB |
-| Almacenamiento libre | 2 GB (para este lab) | 5 GB |
-| GPU | No requerida | No requerida |
+| Recurso | Mínimo requerido |
+|---|---|
+| CPU | 4 núcleos |
+| RAM | 8 GB |
+| Disco | 128 GB SSD |
+| Red | Mínimo 10 Mbps |
 
 ### Software requerido
 

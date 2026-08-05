@@ -44,11 +44,12 @@ En este laboratorio implementarás prototipos mínimos de los tres patrones arqu
 
 ### Hardware Mínimo
 
-| Recurso       | Mínimo requerido          |
-|---------------|---------------------------|
-| CPU           | 4 núcleos                 |
-| RAM           | 8 GB (16 GB recomendado)  |
-| Almacenamiento| 500 MB libres             |
+| Recurso | Mínimo requerido |
+|---|---|
+| CPU | 4 núcleos |
+| RAM | 8 GB |
+| Disco | 128 GB SSD |
+| Red | Mínimo 10 Mbps |
 
 ### Software
 
